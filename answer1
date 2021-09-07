@@ -1,0 +1,10 @@
+def isSubset(arr1,arr2):
+    ans = True
+    for n in range(len(arr2)):
+        if arr2[n] not in arr1:
+            ans = False
+    print(ans)        
+
+isSubset(["A", "B", "C", "D"], ["A", "E", "D"])
+isSubset(["A", "B", "C", "D", "E"], ["A", "D", "Z"])
+isSubset(["A", "D", "E"], ["A", "A", "D", "E"])
